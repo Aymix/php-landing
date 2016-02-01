@@ -74,7 +74,7 @@ $ut-body-line-height:           $ut-line-height-base;
 // Headings
 $ut-heading-font-family:        $ut-font-family-heading;
 $ut-heading-line-height:        $ut-line-height-heading;
-$ut-heading-font-weight:        300;
+$ut-heading-font-weight:        400;
 $ut-heading-margin:             ($ut-heading-line-height * .5em); // Defaults to .5em top/bottom margin
 $ut-heading-letter-spacing:     .1em;
 
@@ -90,7 +90,7 @@ $ut-h6-font-size:               1rem;
 $ut-small-font-size:            .75rem;
 
 // Paragraphs
-$ut-paragraph-color:            $ut-font-color-base;
+$ut-paragraph-color:            #888;
 $ut-paragraph-margin:           $ut-margin-base;      // Bottom margin (1.5em)
 $ut-paragraph-width-readable:   (1rem * 45);          // Based on root element. ~80 characters per line.
 

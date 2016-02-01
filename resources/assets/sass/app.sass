@@ -3,6 +3,7 @@
 
 body
   background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/furley_bg.png)
+
 .root-body
   margin: auto
   max-width: 70em
@@ -37,23 +38,15 @@ body
 //=============
 // Search bar
 
-
-
 .search-bar-container
   margin-bottom: $ut-margin-base
 .search-bar-wrapper
   font-size: 1.5em
   text-align: center
-  //height: 30vh
   max-width: 30em
   margin: auto
 
 .uptilt-form
-  //position: relative
-  //top: 100%
-  //transform: translateY(-50%)
-  //transition: top ease 0.5s
-
   .input-group
     position: relative
     max-width: 100%
@@ -91,10 +84,11 @@ body
   +ut-button-size(small, 0.5em, 1em)
 .fa-arrow-circle-right
   margin-left: 0.25em
+
 // Search bar
 //=============
 
-//============
+//=============
 // RSS
 .rss-container.show
   display: block
@@ -102,6 +96,7 @@ body
   display: none
   lost-column: 2/3
   animation-duration: 1.5s
+
 .rss-wrapper
   text-align: center
   background: #f8f8f8
@@ -109,20 +104,30 @@ body
   box-shadow: 1px 1px 5px rgba($ut-color-light-gray, 0.8)
   border-radius: 3px
   margin-bottom: $ut-margin-base
+
 .rss-articles-wrap
-  text-align: center
+  text-align: left
+
 .rss-article
   .article-title
-    h5
+    .article-heading
       margin-bottom: 0
     &:hover
       cursor: pointer
   .article-body
+    transition: none
+    text-align: center
     margin-top: 1.5em
     display: none
-    text-align: center
-  .article-footer
-    text-align: right
+    table
+      margin: 0
+      td
+        border-bottom: none
+        text-align: center
+    .md // Reddit body class
+      text-align: left
+
+// Media queries
 @media (max-width: 800px)
   .rss-container
     lost-column: 1/1

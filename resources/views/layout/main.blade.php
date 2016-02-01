@@ -20,9 +20,9 @@
 </div>
 <div class="search-bar-container">
     <div class="search-bar-wrapper">
-        <form class="uptilt-form" method="get" >
+        <form class="uptilt-form" method="get" action="https://www.google.com/search">
             <div class="input-group">
-                <input type="text" id="uptilt-input" autofocus />
+                <input type="text" id="uptilt-input" name="q" autofocus />
                 <label for="uptilt-input">Google knows everything...</label>
             </div>
             <button type="submit" class="ut-button ut-search-submit">Search for it<i class="fa fa-lg fa-arrow-circle-right"></i></button>
@@ -32,21 +32,18 @@
 <div class="middle-section">
     <div class="rss-container">
         <div class="rss-wrapper">
-            <h4>{!! $feed->get_title() !!}</h4>
-            <p>RSS Feed</p>
+            <h3>Final Fantasy X|V: Heavensward</h3>
+            <p><i class="fa fa-rss-square"></i> RSS Feed</p>
             <hr>
             <div class="rss-articles-wrap">
                 @foreach($feed->get_items() as $item)
                     <div class="rss-article">
                         <div class="article-title">
-                            <h5>{!! $item->get_title() !!}</h5>
+                            <h4 class="article-heading">{!! $item->get_title() !!}</h4>
                             <small>{!! $item->get_date() !!}</small>
                         </div>
                         <div class="article-body">
                             {!! $item->get_content() !!}
-                        </div>
-                        <div class="article-footer">
-
                         </div>
                         <hr>
                     </div>

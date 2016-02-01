@@ -39,9 +39,6 @@ $(function() {
             // Load the content only after the div is ready to be loaded
             $('.character-portrait img').one('load', function() {
                 $('.lodestone-wrapper').addClass("animated bounceInRight show");
-                $('.rss-container').addClass("animated bounceInUp show");
-                $('.padding-wrapper iframe').addClass("animated bounceInDown show");
-
             })
 
 
@@ -50,7 +47,8 @@ $(function() {
         }
         //build HTML into DOM in the HTML file. Append the values to the classes inside of that via JS. DO NOT BUILD HTML WITH JS!! BAD CODE!!
     });
-
+    $('.rss-container').addClass("animated bounceInUp show");
+    $('.padding-wrapper iframe').addClass("animated bounceInDown show");
     $('.character-class-wrap').click(function(){
        $('.character-classes').slideToggle('slow');
     });

@@ -28,12 +28,10 @@ h4,
 h5,
 h6 {
   font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #444444;
   line-height: 1;
-  margin: 0.5em 0;
-  letter-spacing: 0.1em;
-  text-transform: uppercase; }
+  margin: 0.5em 0; }
 
 h1 {
   font-size: 3.157rem; }
@@ -403,21 +401,27 @@ body {
   margin-bottom: 1.5em; }
 
 .rss-articles-wrap {
-  text-align: center; }
+  text-align: left; }
 
-.rss-article .article-title h5 {
+.rss-article .article-title .article-heading {
   margin-bottom: 0; }
 
 .rss-article .article-title:hover {
   cursor: pointer; }
 
 .rss-article .article-body {
+  -webkit-transition: none;
+  transition: none;
+  text-align: center;
   margin-top: 1.5em;
-  display: none;
-  text-align: center; }
-
-.rss-article .article-footer {
-  text-align: right; }
+  display: none; }
+  .rss-article .article-body table {
+    margin: 0; }
+    .rss-article .article-body table td {
+      border-bottom: none;
+      text-align: center; }
+  .rss-article .article-body .md {
+    text-align: left; }
 
 @media (max-width: 800px) {
   .rss-container {

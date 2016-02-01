@@ -11,7 +11,7 @@ use willvincent\Feeds\Facades\FeedsFacade as Feed;
 class HomeController extends Controller
 {
     public function index() {
-        $feed = Feed::make("http://na.finalfantasyxiv.com/pr/blog/atom.xml");
+        $feed = Feed::make("https://www.reddit.com/r/ffxiv/new/.rss");
 
         return view('layout.main', ['feed' => $feed]);
     }
